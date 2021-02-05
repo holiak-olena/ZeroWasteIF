@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Waste IF</title>
+    <link rel="shortcut icon" type="image/png" href="img/header-img/favicon-32x32.png"/>
+    <link rel="stylesheet" href="cssReset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexZW.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Nunito&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="brick brick-header">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col">
+                    <div class="social-networks">
+                             <a href="https://twitter.com" target="_blank">
+                                <img src="img/header-img/twit.svg" alt="Twitter page"></a>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img src="img/header-img/fcb.svg" alt="Facebook page"></a>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img src="img/header-img/inst.svg" alt="Instagram page"></a>
+                    </div>
+                </div>
+                <div class="col-6">
+                </div>
+                <div class="col logo-home-page">
+                    <a href="" target="_blank">
+                        <img src= "img/header-img/zeroWaste-logo.png" alt="Home page"></a>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="brick brick-presentation">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col-9">
+                    <div class="title">
+                        <p>Ми будуємо рух перетворення</p>
+                        <p>Івано-Франкіська в місто без&nbsp;сміття</p>
+                    </div>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="brick brick-projects">
+        <div class="container title">
+            <h1>НАШІ ПРОЕКТИ</h1>
+            <h2>Зараз ми працюємо над</h2>
+        </div>
+        
+        <div class="container content">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <h2>#DajIF</h2>
+                        <p>#Дай Івано-Франкіську чистоту
+                            Ми будемо демонструвати можливості для підтримки громадських та благодійних організацій у Івано-Франкіську. Слідкуй за нами у Facebook, Twitter чи Instagram, щоб отримати безліч ідей щодо пожертв місцевим громадам та благодійним організаціям цього Різдва. Щоб дізнатись більше та пожертвувати, відвідайте #DajIF</p>
+                    </div>
+                    <div class="col-6">
+                            <h3>Модне майбутнє Івано-Франкіська</h3>
+                            <p>Ми запустили Модне майбутнє Івано-Франкіська, щоб полегшити людям переробку, повторне використання, ремонт одягу та текстилю. Ми хочемо зменшити кількість одягу, який залишають в побутових смітниках Івано-Франкіська - за оцінками, 4000 тонн на рік. Подивіться нашу карту всіх текстильних банків, благодійних магазинів, ремонтних майстерень, класів шиття та бірж одягу в Івано-Франкіську.</p>
+                            <h3>Повторне використання шкільної форми</h3>
+                            <p>Ми хочемо зробити вживану вживану шкільну форму першочерговим вибором для Франика. Наш проект Франківський Обмін Шкільною Формою підтримує людей по всьому місту в обміні формою в їх школі або в їх локальній громаді.</p>
+                    </div>
+                </div>
+        </div> 
+    </div>
+
+    <div class="brick brick-idea">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <img src="img/lamp-idea.svg" alt="idea-lamp"> 
+                </div>
+                <div class="col-6">
+                    <h1>МАЄШ ІДЕЮ?!</h1>
+                    <p>Все, що ми робимо, починається з ідеї. Якщо ти знаєш про якусь проблему у Франкіську, на яку ми мусимо звернути увагу, скажи нам про це.</p>
+                    <div class="button-letUsKnow">
+                        <a href="mailto:zero-waste-if@gmail.com">ПИШИ НАМ!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brick brick-thinking">
+        <div class="container">
+            <form>
+                <h1>КАЛЬКУЛЯТОР ЗАСМІЧЕННЯ</h1>
+                <div class="row justify-content-center">
+                    <div class="house-type">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-6">
+                                <h3>Твоє житло:</h3>
+                                <select id="houseTypeSelect" onChange="calculate()" class="form-select form-select-lg mb-3" aria-label="Оберіть вид житла">
+                                    <option value="2400">Багатоквартирний будинок</option>
+                                    <option value="1200" selected>Приватний будинок з ділянкою</option>
+                                    <option value="600">Гуртожиток</option>
+                                </select>
+                            </div>
+                                <div class="col-6 persons">
+                                    <h3>Кількість осіб:</h3>
+                                    <input id="personsInput" onChange="calculate()" class="form-control form-control-lg" type="number" step="1" min="1" value="3" aria-label="Кількість осіб">
+                                </div>
+                            </div>
+                        </div>
+                                <div class="zero-waste-tips">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" onChange="calculate()" type="checkbox" id="tip1">
+                                        <label class="form-check-label" for="tip1">Купляю менше</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" onChange="calculate()" type="checkbox" id="tip2">
+                                        <label class="form-check-label" for="tip2">Залишки їжі не викидаю у смітник</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" checked onChange="calculate()" type="checkbox" id="tip3">
+                                        <label class="form-check-label" for="tip3">Уникаю використання одноразових товарів</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" checked onChange="calculate()" type="checkbox" id="tip4">
+                                        <label class="form-check-label" for="tip4">Не купляю товари зі швидким зношенням</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" onChange="calculate()" type="checkbox" id="tip5">
+                                        <label class="form-check-label" for="tip5">Не використовую забруднюючі засоби для прибирання</label>
+                                    </div>
+                                </div>
+                        <div class="result">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-6 cub-m">
+                                        <p>Ти накопичуєш сміття - <span id="resultCubicMeters">???</span> м.куб/рік</p>
+                                    </div>
+                                    <div class="col-6 oil">
+                                        <p>На тебе використали палива для вивозу сміття - <span id="resultGas">???</span> л/рік</p>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="icons">
+                                <h3>Твій рівень засмічення</h3>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col result-pic" id="labelLeaf">
+                                            <img src="img/culculation-img/result-eco.jpg" alt="result eco">
+                                            <h3>ЕКО</h3>
+                                        </div>
+                                        <div class="col result-pic" id="lableCup">
+                                            <img src="img/culculation-img/result-cup.jpg" alt="result cup">
+                                            <h3>Можна краще</h3>
+                                        </div>
+                                        <div class="col result-pic" id="labelBag">
+                                            <img src="img/culculation-img/result-bag.jpg" alt="result bag">
+                                            <h3>Брудно</h3>
+                                        </div>
+                                        <div class="col result-pic" id="labelBucket">
+                                            <img src="img/culculation-img/result-bucket.jpg" alt="result bucket">
+                                            <h3>Халепа</h3>
+                                        </div>
+                                        <div class="col result-pic" id="labelLandfield">
+                                            <img src="img/culculation-img/result-landfield.jpg" alt="result landfield">
+                                            <h3>Катастрофа!</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div> 
+
+    <div class="brick brick-help">
+        <div class="container">
+            <div class= "row justify-content-center">
+                <div class="col-4">
+                    <img src="img/hi-help.svg" alt="hi-icon"> 
+                </div>
+                <div class="col-6">
+                    <h1>ПОТРІБНА ДОПОМОГА?<br/>
+                        НАЙМИ НАС!</h1>
+                    <p>Наша кваліфікація є найвищою в розробці кампаній по зміні поведінки, що допомагає людям та організаціям марнувати менше.<br/>
+                        Тобі цікаво працювати з нами?<br/>
+                        Ми маємо великий досвід в розробці кампаній, що залучують та впливають на зміни. Наша десятитижнева кампаній по зменшенню відходів, що була розроблена з початком карантину в березні та передана в Івано-Франківський міський консиліум, є найшвіжішим прикладом.</p>
+                    <div class="button-talkToUs">
+                        <a href="mailto:zero-waste-if@gmail.com">ДІЗНАТИСЬ БІЛЬШЕ</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="brick brick-tips">
+        <div class="container">
+            <h1>НАШІ НАЙПОПУЛЯРНІШІ ПОРАДИ</h1>
+                <h2>Шляхи початку зменшення своїх відходів</h2>
+                <div class="row justify-content-center card-body">
+                    <div class="col-3">
+                        <a href="#">
+                            <img class="card-img-top" src="img/cards-photo-img/canva-photo-of-plastic-bottles-1-.jpg" alt="recycle">
+                            <div class="card-body">
+                                <h3 class="card-title">Переробка</h3>
+                                <p class="card-text">Часом переробка може бути доволі плутаною - ми є тут для того, щоб допомогти зробити її трохи легшою.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <img class="card-img-top" src="img/cards-photo-img/food-waste-1-.png" alt="Food waste">
+                            <div class="card-body">
+                                <h3 class="card-title">Харчові відходи</h3>
+                                <p class="card-text">Дослідження показують, що багато з нас зменшили кількість харчових відходів останніми місяцями.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <img class="card-img-top" src="img/cards-photo-img/garden-waste-5-.png" alt="Carden waste">
+                            <div class="card-body">
+                                <h3 class="card-title">Городні відходи</h3>
+                                <p class="card-text">Хочеш почати компостувати, створювати затишок диким тваринам чи перевикористати те, що маєш в своєму городі?</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <img class="card-img-top" src="img/cards-photo-img/stuff.jpg" alt="Stuff">
+                            <div class="card-body">
+                            <h3 class="card-title">Лахміття</h3>
+                            <p class="card-text">Одяг, меблі, електроприлади... ми можемо допомогти, щоб це все не стало відходами.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                        </div>
+                        <div class="col-9 trick">
+                            <div class="button-trick">
+                                <a href="#">дивитись всі наші поради</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                        </div>
+                    </div>
+                </div> 
+        </div> 
+    </div>
+
+    <div class="brick brick-supporters">
+        <div class="container">
+            <div class= "row justify-content-center">
+                <div class="col-4">
+                    <img src="img/thank-you.svg" alt="thank you"> 
+                </div>
+                <div class="col-6">
+                    <h1>НАС ПІДТРИМУЮТЬ</h1>
+                    <p>Ми будуємо рух. Це означає, що вся наша робота полягає в співпраці та партнерстві з іншими. Дивись, хто наші партнери та хто допомагає забезпечувати нашу діяльність.</p>
+                    <div class="button-readMeLink">
+                        <a href="#">ЧИТАТИ ЩЕ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="brick brick-involve">
+        <div class="container">
+            <h1>ДОЛУЧАЙСЯ</h1>
+            <h2>Проблеми, з якими ми боремося у Франківську</h2>
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    <a href="#">
+                            <img src="img/cards-photo-involved/screen-shot-2020-12-01-at-16.50.25.png" alt="photo involved">
+                        <div class="card-body">
+                            <h3>#DajIF - ПІДТРИМАЙ ЛОКАЛЬНІ ГРОМАДИ ТА БЛАГОДІЙНИКІВ</h3>
+                            <p>Ціль нашої кампанії #DajIF полягає в спрощенні тобі шляху підтримки локальних благодійників та громадських об'єднань цього Різдва.</p>
+                            <h3>Читати більше ></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                            <img src="img/cards-photo-involved/school-uniform1.jpg" alt="school-uniform">
+                        <div class="card-body">
+                            <h3>ДОЛУЧАЙСЯ ДО НАС В СТВОРЕННІ ПЕРЕУЖИТКУ ШКІЛЬНОЇ ФОРМИ НОРМОЮ В ІВАНО-ФРАНКІВСЬКУ</h3>
+                            <p>Важливо показати неймовірні позитивні результати нашої кампанії по перевикористанні вживаної шкільної форми!</p>
+                            <h3>Читати більше ></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                            <img src="img/cards-photo-involved/business1.jpg" alt="photo business">
+                        <div class="card-body">
+                            <h3>ПОТРЕБУЄШ ДОПОМОГИ В ПЕРЕТВОРЕННІ СВОГО ПІДПРИЄМСТВА В ВІДНОВЛЮВАНЕ? ПИШИ!</h3>
+                            <p>Ми відвідуємо підприємства по цілому Франківську для допомоги їм стати відновлюваними з точки зору навколишнього середовища.</p>
+                            <h3>Читати більше ></h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="brick brick-join">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <img src="img/join-us.svg" alt="join-us"> 
+                </div>
+                <div class="col-6">
+                    <h1>ДОЛУЧАЙСЯ ДО НАШОГО РУХУ</h1>
+                    <p>Щокроку нашого шляху ми пізнаємо все більше людей Франика, які є допитливими серйозними та пристрастними щодо зменшення своїх відходів. Якщо ти один з них - долучайся!</p>
+                        <div class="col">
+                            <form>
+                                <input type="email" id="email" name="email" placeholder="Твоя пошта">
+                                <input type="submit" value="ДОЛУЧИТИСЬ">
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="calculation.js"></script>
+</body>
+</html>
